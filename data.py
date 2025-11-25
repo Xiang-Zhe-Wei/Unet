@@ -30,8 +30,5 @@ class MyDataSet(Dataset):
 if __name__ == "__main__":
     path = "/Users/xiangzhewei/Documents/master/Unet/VOC2012_train_val"
     m = MyDataSet(path)
-    print(m[1][0].shape)
+    print(m[0])
 
-    # img = to_pil_image(m[1][0])
-    img = to_pil_image(m[1][1])
-    img.save("debug.png")
