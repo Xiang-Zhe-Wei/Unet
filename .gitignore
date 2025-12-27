@@ -2,3 +2,4 @@ VOC2012*
 .DS_Store
 __pycache__
 *.png
+params

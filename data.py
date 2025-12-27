@@ -21,8 +21,8 @@ class MyDataSet(Dataset):
         print(seg_name)
         seg_path = os.path.join(self.path, "SegmentationClass", seg_name)
         img_path = os.path.join(self.path, "JPEGImages", seg_name.replace("png", "jpg"))
-        seg = mask_picture(seg_path)
-        img = mask_picture(img_path)
+        seg = mask_picture_p(seg_path)
+        img = mask_picture_rgb(img_path)
         return trans_img(img), trans_img(seg)
 
 
